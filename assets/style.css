@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+body{
+    background-color: #181419;
+}
+
+.header{
+    background-color: #7b3b3b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 1px 2%;
+}
+
+.header .logo{
+    cursor: pointer;
+
+}
+
+.header .logo img{
+    height: 50px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    order: 1;
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+.header .nav-links li:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.header .nav-links a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.header .nav-links li a:hover{
+    color: aliceblue;
+}
+
+
+
+.inicio{
+    background-image:linear-gradient(to right top, #0000008a, #0000008a),  url("/assets/encabezado3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.h1Inicio{
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.h2Inicio{
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.h3Titulo{
+    color: #fff;
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.inicio .btnReg{
+    text-decoration: none;
+    color: #fff;
+    background-color: #9f3647;
+    border-radius: 4px;
+    padding: 0.8rem 1.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition:all 0.3s ease;
+}
+
+.btnReg:hover{
+    transition:all 0.3s ease;
+    box-shadow: 0 0 33px 1px #9f3648cd;
+    transform: scale(0.96);
+}
+
+.search,.TendenciasHoy, .MasAclamado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:#fff;
+}
+
+.search{
+    height: 80vh;
+}
+
+.busqueda{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buscador{
+    border: 3px solid #9f3647;
+    border-radius: 25px;
+    color: #000000;
+    font-size: 1.2rem;
+    height: 3rem;
+    margin: 20px 0px;
+    outline: none;
+    padding: 0px 20px;
+    width: 40rem;
+}
+
+.buscar{
+    background-color: #9f3647;
+    display: inline-block;
+    color: #ffffff;
+    height: 3.2rem;
+    width: 6rem;
+    margin: 20px 10px;
+    /* padding: 0 20px; */
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: 2px solid white;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.buscar:hover{
+    transform: scale(0.95);
+    box-shadow: 0 0 10px #9f3648cd;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+.TendenciasHoy{
+    width: 80%;
+    margin: auto;
+}
+
+.Tendencia{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin: auto;
+}
+
+.Tendencia  a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.tndItem{
+    width: 200px;
+    height: 300px;
+    position: relative;
+    transition:all 0.3s ease;
+}
+
+.peli{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+}
+
+.imgTendencia{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tituloPeli{
+    visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /*centrado de titulo*/
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    h4 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        letter-spacing: 0.1rem;
+        color: #ffffff;
+        -webkit-text-stroke: 1px #000000cd;
+        text-shadow: 0px 4px 4px #9f3648cd;
+    }
+}
+
+.tndItem:hover{
+    box-shadow: 0 0 33px 1px #9f3648cd;
+    transform: scale(0.94);
+    border-radius: 10px;
+
+    transition:all 0.5s ease;
+
+    .tituloPeli{
+        visibility: visible;
+        display: flex;
+        justify-content: center;
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+    }
+    
+}
+
+.TendenciasHoy .btnTnd{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.TendenciasHoy .btnTnd a{
+    padding: 1rem 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    background: #9f3647;
+    transition: 0.3s;
+}
+
+.btnTnd a:hover{
+    transform: scale(0.95);
+    box-shadow: 0 0 10px #9f3648cd;
+    transition: 0.3s;
+}
+
+.MasAclamado{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.aclamadas{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 0px 0px 40px 0px;
+}
+
+.AclaItem img{
+    background-color: gray;
+    width: 150px;
+    height: 220px;
+    position: relative;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar{
+    background-color: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:  #8a2c3c;
+}
+
+hr{
+    border: 1px solid #9f3647;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.footer{
+    background-color: #7b3b3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 1px 2%;
+
+
+}
+
+.footer .nav-links-footer{
+    order: 1;
+}
+
+.footer .nav-links-footer{
+
+    list-style: none;
+}
+
+.footer .nav-links-footer li{
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.footer .nav-links-footer li:hover{
+    transform: scale(1.1);
+}
+
+.footer .nav-links-footer a{
+    text-decoration: none;
+    color: white;
+}
+
