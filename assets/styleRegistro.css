@@ -32,7 +32,6 @@ body{
     .pagName{
         font-size: 1.2rem;
         font-weight: bold;
-        margin-bottom: 0.5rem;
         letter-spacing: 0.1rem;
         color: #ffffff;
         -webkit-text-stroke: 1px #000000cd;
