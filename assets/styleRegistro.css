@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
     font-family: "Nunito", sans-serif;
 }
 
@@ -136,4 +137,13 @@ a{
     display: flex;
     justify-content: start;    
     align-items: center;
+}
+
+::-webkit-scrollbar{
+    background-color: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:  #8a2c3c;
 }
