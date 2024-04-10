@@ -136,8 +136,12 @@ body{
     background-image:linear-gradient(to right top, #393b4562, #393b45de),url("../assets/PortadaDetalles/SoloLVL.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     display: flex;
     justify-content: center;
+    align-items: center;
+
+
     .contenedorInfoGral{
         display: flex;
         justify-content: center;
@@ -145,11 +149,15 @@ body{
         margin:3rem;
         color: #ffffff;
         gap: 3rem;
-        padding: 2rem;
-        background-color: #181419;
+        padding: 1rem;
+        /* background-color: #181419; */
         border-radius: 10px;
+        height: 60vh;
         width: 160vh;
-        max-height: fit-content;
+        border: 2px solid #ffffff;
+
+        backdrop-filter: blur(5px);
+
         .contPortada{
             display: flex;
             width: 300px;
@@ -157,24 +165,34 @@ body{
             justify-content: center;
             padding: 1rem;
             max-height: fit-content;
+            
             .imgPortada{
                 object-fit: cover;
                 max-height: fit-content;
                 border-radius: 10px;
+                border: 2px solid #ffffff;
             }
         }
 
-
-        .infoSerie .sinopsis{
-            max-height : 200px;
-            width: 200px;
-            overflow: auto;
-            scroll-behavior: smooth;
-            width: 100%;
+        .infoSerie{
             display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
+            max-height: 360px;
+            flex-direction: column;
+            text-decoration: none;
+            .sinopsis{
+                max-height : 200px;
+                width: 200px;
+                overflow: auto;
+                scroll-behavior: smooth;
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                text-align:justify;
+            }
+
         }
+
 
     }
 
