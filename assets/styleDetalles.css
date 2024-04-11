@@ -216,7 +216,7 @@ body{
 
 @media screen and (width <= 1200px){
     .infoGeneral{
-        height: initial;
+        height: 50%;
 
         .contenedorInfoGral{
             height: 50%;
