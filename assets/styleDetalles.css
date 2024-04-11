@@ -155,13 +155,12 @@ body{
         border-radius: 10px;
         height: 70vh;
         max-height: 100%;
+
         width: 160vh;
         
 
         backdrop-filter: blur(5px);
-        -webkit-box-shadow: 1px 2px 20px 7px rgba(0,0,0,0.75);
-        -moz-box-shadow: 1px 2px 20px 7px rgba(0,0,0,0.75);
-        box-shadow: 1px 2px 20px 7px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.75);
 
 
 
@@ -204,8 +203,6 @@ body{
                 scroll-behavior: smooth;
                 width: 100%;
                 display: flex;
-                justify-content: flex-start;
-                align-items: flex-start;
                 text-align:justify;
                 padding-right: 0.5rem;
             }
@@ -218,17 +215,7 @@ body{
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .infoDetallada{
     height: 80vh;
 }
+
