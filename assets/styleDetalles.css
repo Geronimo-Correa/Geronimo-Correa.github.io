@@ -146,13 +146,14 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+
         margin:3rem;
         color: #ffffff;
-        gap: 3rem;
+        gap: 0.3rem;
         padding: 1rem;
         /* background-color: #181419; */
         border-radius: 10px;
-        height: 60vh;
+        height: 70vh;
         width: 160vh;
         
 
@@ -161,27 +162,33 @@ body{
         -moz-box-shadow: 1px 2px 20px 7px rgba(0,0,0,0.75);
         box-shadow: 1px 2px 20px 7px rgba(0,0,0,0.75);
 
-        .contPortada{
-            display: flex;
-            width: 300px;
+
+
+        .imgPortada{
+            width: 100%;
             height: 400px;
-            justify-content: center;
-            padding: 1rem;
-            max-height: fit-content;
-            
-            .imgPortada{
-                object-fit: cover;
-                max-height: fit-content;
-                border-radius: 10px;
-                border: 2px solid #ffffff;
-            }
+            object-fit: cover;
+            object-position: center;
+            margin: 1rem;
+            border-radius: 10px;
+
         }
 
         .infoSerie{
             display: flex;
-            max-height: 360px;
+            max-height: 400px;
             flex-direction: column;
             text-decoration: none;
+            padding: 1rem;
+
+            
+            
+            h1{
+                font-size: 2.5rem;
+                margin-bottom: 0.3rem;
+
+            }
+
             .sinopsis{
                 max-height : 200px;
                 width: 200px;
@@ -192,7 +199,9 @@ body{
                 justify-content: flex-start;
                 align-items: flex-start;
                 text-align:justify;
+                padding-right: 0.5rem;
             }
+
 
         }
 
