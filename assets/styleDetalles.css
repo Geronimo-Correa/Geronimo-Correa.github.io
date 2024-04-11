@@ -154,9 +154,12 @@ body{
         border-radius: 10px;
         height: 60vh;
         width: 160vh;
-        border: 2px solid #ffffff;
+        
 
         backdrop-filter: blur(5px);
+        -webkit-box-shadow: 1px 2px 20px 7px rgba(0,0,0,0.75);
+        -moz-box-shadow: 1px 2px 20px 7px rgba(0,0,0,0.75);
+        box-shadow: 1px 2px 20px 7px rgba(0,0,0,0.75);
 
         .contPortada{
             display: flex;
