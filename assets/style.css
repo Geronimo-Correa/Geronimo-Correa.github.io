@@ -422,4 +422,32 @@ hr{
             transition:all 0.3s ease;
         }
     }
+
+
+    .search {
+        height: 60vh;
+        width: 80%;
+
+        .h3Titulo{
+            font-size: 1.3rem;
+        }
+        
+        .busqueda {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .buscar{
+                height: 3rem;
+                width: 6rem;
+                max-width: 100%;
+                padding: 0.7rem 0.7rem 0.7rem 0.7rem;
+            }
+
+            .buscador {
+                font-size: 1.2rem;
+                padding: 0.7rem 0.7rem 0.7rem 0.7rem;
+                /* continuar adaptando a mobile */
+            }
+        }
+    }
 }
