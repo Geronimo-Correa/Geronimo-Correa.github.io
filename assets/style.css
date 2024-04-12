@@ -100,22 +100,46 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: auto;
+    
+
+    
+        .h1Inicio{
+            color: #fff;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin: 0 1rem;
+            margin-bottom: 1rem;
+            
+        }
+
+        .h2Inicio{
+            color: #fff;
+            font-size: 2rem;
+            margin: 0 1rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .btnReg{
+            text-decoration: none;
+            color: #fff;
+            background-color: #9f3647;
+            border-radius: 4px;
+            padding: 0.8rem 1.5rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition:all 0.3s ease;
+        }
+        
+        .btnReg:hover{
+            transition:all 0.3s ease;
+            box-shadow: 0 0 33px 1px #9f3648cd;
+            transform: scale(0.96);
+        }
+
+
 }
 
-.h1Inicio{
-    color: #fff;
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.h2Inicio{
-    color: #fff;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    font-weight: 400;
-}
 
 .h3Titulo{
     color: #fff;
@@ -126,22 +150,7 @@ body{
     font-weight: bold;
 }
 
-.inicio .btnReg{
-    text-decoration: none;
-    color: #fff;
-    background-color: #9f3647;
-    border-radius: 4px;
-    padding: 0.8rem 1.5rem;
-    font-weight: bold;
-    font-size: 1.2rem;
-    transition:all 0.3s ease;
-}
 
-.btnReg:hover{
-    transition:all 0.3s ease;
-    box-shadow: 0 0 33px 1px #9f3648cd;
-    transform: scale(0.96);
-}
 
 .search,.TendenciasHoy, .MasAclamado{
     display: flex;
@@ -388,4 +397,29 @@ hr{
 .footer .nav-links-footer a{
     text-decoration: none;
     color: white;
+}
+
+
+@media screen and (width <= 1200px) {
+    .inicio{
+
+        .h1Inicio{
+            font-size: 2.5rem;
+        }
+
+        .h2Inicio{
+            font-size: 1rem;
+        }
+
+        .btnReg{
+            text-decoration: none;
+            color: #fff;
+            background-color: #9f3647;
+            border-radius: 4px;
+            padding: 0.8rem 1.5rem;
+            font-weight: bold;
+            font-size: 1rem;
+            transition:all 0.3s ease;
+        }
+    }
 }
