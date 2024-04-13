@@ -23,70 +23,78 @@ body{
 
 .header{
     background-color: #7b3b3b;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    padding: 1px 2%;
-}
+    height: 10vh;
 
-.header .logo{
-    cursor: pointer;
-    display: flex;
-    justify-content: center;    
-    align-items: center;
-    transition: all 0.3s;
-    padding: 0.5rem 1rem;
-    .pagName{
-        font-size: 1.2rem;
-        font-weight: bold;
-        letter-spacing: 0.1rem;
-        color: #ffffff;
-        -webkit-text-stroke: 1px #000000cd;
-        text-shadow: 0px 4px 4px #9f3648cd;
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        
+        align-items: center;
+        
+        .logo{
+            cursor: pointer;
+            display: flex;
+            justify-content: center;    
+            align-items: center;
+            transition: all 0.3s;
+            padding: 0.5rem 1rem;
+            .pagName{
+                font-size: 1.5rem;
+                font-weight: bold;
+                letter-spacing: 0.1rem;
+                color: #ffffff;
+            }
+
+            img{
+                height: 2.6rem;
+                width: auto;
+                transition: all 0.3s;
+            }
+
+            &:hover{
+                transform: scale(1.2);
+            }
+        
+        }
+
+        .nav-links{
+            list-style: none;
+            display: flex;
+            align-items: center;
+
+            li{
+                margin: 0 1rem;
+                padding: 0.5rem 1rem;
+                font-size: 1.1rem;
+                font-weight: 700;
+                transition: all 0.3s;
+                
+                &:hover{
+                    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+                    border-radius: 5px;
+                    padding: 0.5rem 1rem;
+                    transition: all 0.3s;
+                }
+            }
+        
+            a{
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                
+            }
+        }
     }
 
 }
 
-.header .logo img{
-    height: 2.8rem;
-    width: auto;
-    transition: all 0.3s;
-}
 
-.header .logo:hover{
-    transform: scale(1.2);
-}
 
-.header .nav-links{
-    order: 1;
-}
 
-.header .nav-links{
-    list-style: none;
-}
 
-.header .nav-links li{
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    font-size: 1.1rem;
-    font-weight: 700;
-    transition: all 0.3s;
-}
 
-.header .nav-links li:hover{
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-}
 
-.header .nav-links a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
 
-.header .nav-links li a:hover{
-    color: aliceblue;
-}
+
 
 
 
@@ -450,4 +458,55 @@ hr{
             }
         }
     }
+
+    .header{
+        height: initial;
+        padding: 1px 2%;
+        .menu{
+            flex-direction: column;
+            
+            .logo{
+                margin-top: 0.3rem;
+                margin-bottom: 0;
+                .pagName{
+                    font-size: 1rem;
+                    font-weight: bold;
+                    letter-spacing: 0;            
+                }
+        
+                img{
+                    height: 2.3rem;
+                    margin: 0 0.2rem 0 0.2rem;
+                }
+            
+            }
+
+            .nav-links{                
+                padding: initial;
+                li{
+                    margin: 1rem;
+                    padding: 0.5rem;
+                    font-size: 1rem;
+                    font-weight:normal;
+                    transition: all 0.3s;
+                    
+                    &:hover{
+                        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+                        border-radius: 5px;
+                       
+                        transition: all 0.3s;
+                    }
+                }
+            
+                a{
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                    
+                }
+            }
+        }
+    }
+
+
+
 }
