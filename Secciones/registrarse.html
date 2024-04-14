@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro | CAC-Series</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/styleRegistro.css">
     <link rel="icon" href="/assets/carrete-de-pelicula.ico">
 
@@ -29,7 +30,7 @@
     </header>
 
     <main>
-        <section class="contenedor-form">
+        <section class="contenedor-form" data-aos="zoom-in-up" data-aos-offset="300" data-aos-delay="50" data-aos-duration="2500">
             <form action="../index.html">
                 <h2 class="tituloRegistrar">Registro</h2>
                 <div class="contenedor-input">
@@ -307,5 +308,10 @@
             </form>
         </section>
     </main>    
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

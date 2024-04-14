@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, width=device-width">    
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <link rel="stylesheet" href="../assets/styleDetalles.css"">
     <link rel="icon" href="../assets/carrete-de-pelicula.ico">
 
@@ -46,11 +49,11 @@
     
     <main>
         <section class="infoGeneral">
-            <div class="contenedorInfoGral">
+            <div class="contenedorInfoGral" >
 
-                <img class="imgPortada" src="../assets/Portadas/ore-dake-level-up-na-ken.jpg" alt="">
+                <img class="imgPortada" src="../assets/Portadas/ore-dake-level-up-na-ken.jpg" alt="" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
 
-                <div class="infoSerie">
+                <div class="infoSerie" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
                     <h1>Ore dake Level Up na Ken (2024)</h1>
                     <h5>Duracion por capitulo: 24 min.</h5>
                     <h5>Géneros: Fantasia, Aventura y Accion</h5>
@@ -63,7 +66,7 @@
             </div>
         </section>
         
-        <section class="infoDetallada">
+        <section class="infoDetallada" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1500">
                 <div class="contenedorTrailer">
                     <h2>Ver trailer</h2>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/TceDFwPXCuI?si=xLCxgCKJILV_0m2t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -134,5 +137,11 @@
            </ul>
         </nav>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 </html>
