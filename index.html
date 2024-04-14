@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="icon" href="/assets/carrete-de-pelicula.ico">
 
@@ -46,7 +48,7 @@
 
     <main class="main">
         
-        <section class="inicio">
+        <section class="inicio" data-aos="flip-up" data-aos-offset="300" data-aos-delay="50" data-aos-duration="1000">
 
             <h1 class="h1Inicio">
                 Peliculas y series ilimitadas 
@@ -66,9 +68,9 @@
         
         
 
-        <section class="search">
+        <section class="search" data-aos="fade-up" data-aos-offset="300" data-aos-delay="50" data-aos-duration="1000">
             <h3 class="h3Titulo">¿Qué estás buscando para ver?</h3>
-            <form class="busqueda" action="#">
+            <form class="busqueda" action="#" >
                 <input class="buscador" type="text" placeholder="Buscar..."> 
                 <input class="buscar" type="submit" value="Buscar">
             </form>
@@ -399,9 +401,19 @@
                 </li>
            </ul>
         </nav>
-
     </footer>
 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500
+        });
+    </script>
+
 </body>
+
 </html>
+
+
 

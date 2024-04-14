@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, width=device-width">    
+
     <link rel="stylesheet" href="../assets/styleDetalles.css"">
     <link rel="icon" href="../assets/carrete-de-pelicula.ico">
 
@@ -15,26 +16,28 @@
 </head>
 <body>
     <header class="header">
-        <div class="logo">
+        <nav class="menu">
             <a href="../index.html">
-                <img src="/assets/carrete-de-pelicula.png" alt="logoPagina">
-                <div class="pagName">
-                    <h2>CAC-Series</h2>
+                <div class="logo">
+                    <img src="/assets/carrete-de-pelicula.png" alt="logoPagina">
+                    <div class="pagName">
+                        <span>CAC-Series</span>
+                    </div>
                 </div>
             </a>
-        </div>
-        <nav>
+                
+
             <ul class="nav-links">
-                <li>
+                <li class="itemNav">
                     <a href="../index.html#tendencias">Tendencias</a>
                 </li>
                 
-                <li>
-                    <a href="./registrarse.html">Registrarse</a>
-                </li>
+                <li class="itemNav">
+                    <a href="registrarse.html">Registrarse</a>
+                </li class="itemNav">
                 
-                <li>
-                    <a href="#">Iniciar Sesión</a>
+                <li class="itemNav">
+                    <a class="iniciarSesion" href="#">Iniciar Sesión</a>
                 </li>
            </ul>
 
@@ -112,7 +115,7 @@
     </main>
 
     <footer class="footer">
-        <nav>
+        <nav class="menuFooter">
             <ul class="nav-links-footer">
                 <li>
                     <a href="#">Término y condiciones</a>
@@ -126,11 +129,10 @@
                     <a href="#">Ayuda</a>
                 </li>
                 <li>
-                    <a href="#">Administrador de Peliculas</a>
+                    <a class="admPeliculas" href="#">Administrador de Peliculas</a>
                 </li>
            </ul>
         </nav>
-
     </footer>
 </body>
 </html>
