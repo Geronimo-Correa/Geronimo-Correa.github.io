@@ -458,7 +458,6 @@ hr{
             .buscador {
                 font-size: 1.2rem;
                 padding: 0.7rem 0.7rem 0.7rem 0.7rem;
-                /* continuar adaptando a mobile */
             }
         }
     }
@@ -504,23 +503,7 @@ hr{
                     }
     
                 }
-
-            /* .nav-links{          
-             margin: 0 auto;
-                li{
-                    margin: 1rem 0;
-                    padding: 0.25rem 0.1rem;
-                    a{
-                        margin: 1rem .5rem;
-                        font-size: 1rem;
-                        font-weight:normal;
-                    }
-                    &:hover{
-                        padding: 0.25rem 0.1rem;
-                    }
-                }
-
-            } */
+            }
         }
     }
 
@@ -543,7 +526,5 @@ hr{
         }
     
     }
-
-
-
 }
+
