@@ -66,18 +66,21 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
 
         padding: 2rem 2rem 2rem; 
         background-color: rgb(42, 42, 42);
         border-radius: 5px;
         box-shadow: 0px 0px 19px -1px rgba(153,0,255,1);
     
+        .formRegistrarse{
+            a{
+                text-decoration: none;
+                color:#5b5959;
+            }
+        }
+
     }
-
-
 }
-
 
 .contenedor-input{
     width: 100%;
@@ -110,7 +113,7 @@ body{
     user-select: none;
 }
 
-.btnRegistrar{
+.btnForm{
     justify-content: center;
     margin: 0 auto;
     width: 100%;
@@ -123,7 +126,7 @@ body{
     transition: 0.3s;
 }
 
-.btnRegistrar:hover{
+.btnForm:hover{
     transform: scale(.95);
     transition: 0.3s;
 }
@@ -154,10 +157,13 @@ a{
 }
 
 @media screen and (width <= 1200px){
-
+    .header{
+        justify-content: center;
+    }
     .contenedor-form{
         width:90%;
         height: 80%;
+        
         form{
             margin: 1rem;
         }
