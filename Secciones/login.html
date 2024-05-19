@@ -31,20 +31,18 @@
 
     <main>
         <section class="contenedor-form" data-aos="zoom-in-up" data-aos-offset="300" data-aos-delay="50" data-aos-duration="800">
-            <form action="../index.html">
+            <form method="get">
                 <h2 class="tituloRegistrar">Iniciar Sesión</h2>
 
                 <div class="contenedor-input">
-                    <input type="email" placeholder="Email" required>
+                    <input id="email" type="email" placeholder="Email">
                 </div>
 
                 <div class="contenedor-input">
-                    <input type="password" placeholder="Contraseña" required>
+                    <input id="password" type="password" placeholder="Contraseña">
                 </div>
-
-                <div class="contenedor-input">
-                    <button class="btnForm" valu="Registrarse">Inicirar Sesión</button>
-                </div>
+                    
+                <input type="submit" class="btnForm" value="Iniciar Sesión">
 
                 <div class="formRegistrarse">
                     <a href="registrarse.html">Registrarse</a>
@@ -54,9 +52,14 @@
         </section>
     </main>    
 
+
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+
+    <script src="../js/validarLogin.js"></script>
+
 </body>
 </html>
