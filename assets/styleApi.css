@@ -135,7 +135,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     gap: 30px;
     margin: 2rem auto;
     width: 90%;
@@ -145,6 +144,8 @@ body{
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin: 0 3rem;
+        padding: 1rem;
 
         
         .presentacion{
@@ -153,8 +154,22 @@ body{
         }
 
         .btn{
-            width: 10rem;
-            height: 10rem;
+            width: 25rem;
+            padding: 1rem 1rem;
+            text-decoration: none;
+            color: #ffffff;
+            border-radius: 5px;
+            border: 1px solid #ffffff;
+            background: #9f3647;
+            font-size: 2rem;
+            transition: 0.3s;
+
+            &:hover{
+                transform: scale(0.95);
+                box-shadow: 0 0 10px #9f3648cd;
+                transition: 0.3s;
+            }
+
         }
     }
 
@@ -166,6 +181,16 @@ body{
         border:5px solid #ffffff;
         box-shadow: 1px 3px 25px 6px rgba(148,95,148,1);
 
+    }
+
+    .containerSombra{
+        border:5px solid #848085;
+        width: 300px;
+        height: 400px;
+        background: #535054;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 }

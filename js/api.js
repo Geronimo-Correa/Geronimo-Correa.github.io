@@ -67,34 +67,30 @@ const containerIMG = document.getElementById('img');
 const btnGenerador = document.getElementById('generador');
 const enunciado = document.getElementById('');
 
-
+generar()
 
 //sombra de carga
 const sombraDeCarga = `
-    <div class ="containerSombra">
-        <span class="sombra"></span>
-    </div>
+    <div class ="containerSombra"></div>
 `;
 
 const boton = document.getElementById("generador");
 boton.addEventListener('click', ()=>{
-    console.log("estoy generando");
-    img.innerHTML="";
+    img.innerHTML='';
     img.innerHTML=sombraDeCarga;
     generar();
 })
 
 
 function generar(){
-    fetch(`https://api.waifu.pics/sfw/waifu`).then((response)=>response.json()).then((datos)=>{
+    fetch(`https://api.waifu.pics/sfw/dance`).then((response)=>response.json()).then((datos)=>{
     console.log(datos.url);
     img.innerHTML=`
         <img src ="${datos.url}">
     `;
     
     }).catch(error=> {
-        img.innerHTML=sombraDeCarga;
-        // img.innerHTML = `Error!`
+        img.innerHTML = `Hubo un error Error!`
     })
 
 }
