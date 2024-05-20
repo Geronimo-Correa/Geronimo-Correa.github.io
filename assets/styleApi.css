@@ -163,8 +163,9 @@ body{
             height: 300px;
             object-fit: fill;
             border-radius: 10px;
-            border:2px solid #ffffff;
-            
+            border:5px solid #ffffff;
+            box-shadow: 1px 3px 25px 6px rgba(148,95,148,1);
+
         }
    }
 }
