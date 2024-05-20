@@ -83,7 +83,7 @@ boton.addEventListener('click', ()=>{
 
 
 function generar(){
-    fetch(`https://api.waifu.pics/sfw/dance`).then((response)=>response.json()).then((datos)=>{
+    fetch(`https://api.waifu.pics/sfw/kill`).then((response)=>response.json()).then((datos)=>{
     console.log(datos.url);
     img.innerHTML=`
         <img src ="${datos.url}">
