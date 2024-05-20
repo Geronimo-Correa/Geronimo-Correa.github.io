@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+
+    ::-webkit-scrollbar{
+        background-color: #262327;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color:  #7b3b3b;
+    }
+
+}
+
+body{
+    background-color: #181419;
+}
+
+.header{
+    background-color: #7b3b3b;
+    height: 10vh;
+
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo{
+            cursor: pointer;
+            display: flex;
+            justify-content: center;    
+            align-items: center;
+            transition: all 0.2s;
+            padding: 0.5rem 1rem;
+            margin-top: 0.5rem;
+            .pagName{
+                font-size: 1.5rem;
+                font-weight: bold;
+                letter-spacing: 0.1rem;
+                color: #ffffff;
+            }
+
+            img{
+                height: 2.6rem;
+                width: auto;
+                transition: all 0.2s;
+                
+            }
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        
+        }
+
+        .nav-links{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin-top: 0.5rem;
+            li{
+                a{
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                  
+                    margin: 0 1rem;
+                    padding: 0.5rem 1rem;
+                    font-size: 1.1rem;
+                    font-weight: 700;
+                    transition: all 0.2s;
+                    
+                    &:hover{
+                        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+                        border-radius: 5px;
+                        padding: 0.5rem 1rem;
+                        transition: all 0.2s;
+                        
+                    }
+
+                    
+                }
+                
+                .iniciarSesion,.api{
+                    background-color: #000000;
+                    border-radius: 5px;
+                    transition: transform 0.2s, box-shadow 0.2s;
+                    &:hover{
+                        background-color: #7b3b3b;
+                    }
+                }
+
+            }
+        
+        }
+    }
+
+}
+.footer{
+    background-color: #7b3b3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 1px 2%;
+    .menuFooter{
+        .nav-links-footer{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            li{
+                a{
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                    margin: 0 1rem;
+                    padding: 0.5rem 1rem;
+                    font-size: 1.1rem;
+                    font-weight: 700;                    
+                }
+                
+                .admPeliculas{
+                    background-color: #000000;
+                    border-radius: 5px;
+                }
+
+            }
+        
+        }
+    }
+
+}
+
+
+.containerImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 2rem auto;
+    width: 80%;
+    
+
+   div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    max-width : 250px;
+    
+
+
+        .animeName{
+            font-size: 0.8rem;
+            padding: 1rem;
+            color: #fbe600;
+            text-align: center;
+        }
+
+        img{
+            width: 250px;
+            height: 300px;
+            object-fit: fill;
+            border-radius: 10px;
+            border:2px solid #ffffff;
+            
+        }
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (width <= 1200px) {
+    .header{
+        height: initial;
+        padding: 1px 2%;
+        .menu{
+            flex-direction: column;
+            .logo{
+                margin-top: 0.3rem;
+                margin-bottom: 0;
+                .pagName{
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    letter-spacing: 0;            
+                }
+        
+                img{
+                    height: 2.5rem;
+                    margin: 0 0.2rem 0 0.2rem;
+                }
+            
+            }
+
+            .nav-links{
+                li{
+                    margin: 0 0 1rem;
+                    a{                      
+                        margin: 0 0.5rem;
+                        padding: 0.35rem 0.35rem;
+                        font-size: 0.9rem;
+                        font-weight: bold;
+                        
+                        &:hover{
+                            box-shadow: 0 2px 4.5px rgba(0, 0, 0, 0.3);
+                            border-radius: 5px;
+                            padding: 0.35rem 0.35rem;
+                            
+                        }
+    
+                        
+                    }
+    
+                }
+            }
+        }
+    }
+
+    .footer{
+        height: 25vh;
+        .menuFooter{
+            .nav-links-footer{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                li{
+                    text-align: center;
+                    margin: 0.1rem;
+                    padding: 0.25rem 0.5rem;
+                    font-size: 1rem;
+                    font-weight: 700;
+                }
+            
+            }
+        }
+    
+    }
+}
