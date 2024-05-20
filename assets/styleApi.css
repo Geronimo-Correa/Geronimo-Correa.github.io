@@ -138,42 +138,37 @@ body{
     flex-wrap: wrap;
     gap: 30px;
     margin: 2rem auto;
-    width: 80%;
+    width: 90%;
+    height: 70vh;
     
+    .containerBtnH3{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
 
-   div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem;
-    margin: 0.5rem;
-    max-width : 250px;
-    
-
-
-        .animeName{
-            font-size: 0.8rem;
-            padding: 1rem;
-            color: #fbe600;
-            text-align: center;
+        
+        .presentacion{
+            color: #fff;
+            margin-bottom: 1.2rem;
         }
 
-        img{
-            width: 250px;
-            height: 300px;
-            object-fit: fill;
-            border-radius: 10px;
-            border:5px solid #ffffff;
-            box-shadow: 1px 3px 25px 6px rgba(148,95,148,1);
-
+        .btn{
+            width: 10rem;
+            height: 10rem;
         }
-   }
+    }
+
+    img{
+        max-width: 50vh;
+        max-height: 60vh;
+        object-fit: fill;
+        border-radius: 10px;
+        border:5px solid #ffffff;
+        box-shadow: 1px 3px 25px 6px rgba(148,95,148,1);
+
+    }
+
 }
-
-
-
-
-
 
 
 

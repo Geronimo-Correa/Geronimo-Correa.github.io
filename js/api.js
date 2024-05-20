@@ -1,40 +1,103 @@
-gifAPI('cry',2)
-gifAPI('shoot',5)
-gifAPI('bored',5)
-gifAPI('kick',6)
+// gifAPI('cry',2)
+// gifAPI('shoot',5)
+// gifAPI('bored',5)
+// gifAPI('kick',6)
 
 
-function gifAPI(nombre,cant) {
-    let containerIMG = document.getElementById('container');
+// function gifAPI(nombre,cant) {
+//     let containerIMG = document.getElementById('container');
 
-    //obtención de gifs
-    fetch("https://nekos.best/api/v2/"+nombre+"?amount="+cant)
-    .then((response)=>response.json())
-    .then((datos)=>{
-            datos.results.forEach((element) => {
-                const contenedorCreado = document.createElement('div');
-                contenedorCreado.innerHTML = `
-                    <h4 class="animeName">Anime: ${element.anime_name}</h4>
-                    <img src="${element.url}">
-                `;
-                containerIMG.append(contenedorCreado);
+//     //obtención de gifs
+//     fetch("https://nekos.best/api/v2/"+nombre+"?amount="+cant)
+//     .then((response)=>response.json())
+//     .then((datos)=>{
+//             datos.results.forEach((element) => {
+//                 const contenedorCreado = document.createElement('div');
+//                 contenedorCreado.innerHTML = `
+//                     <h4 class="animeName">Anime: ${element.anime_name}</h4>
+//                     <img src="${element.url}">
+//                 `;
+//                 containerIMG.append(contenedorCreado);
         
-            });
+//             });
         
-    });
-}
+//     });
+// }
 
 
 // idea a futuro: crear un generador de imagenes o gifs en base a la selección del usuario
-// let containerIMG = document.getElementById('container');
-// fetch(`https://api.waifu.pics/sfw/smile`).then((response)=>response.json()).then((datos)=>{
-// console.log(datos.url);
-// const contenedorCreado = document.createElement('div')
-// contenedorCreado.innerHTML=`
-//     <img src ="${datos.url}">
-// `
-// containerIMG.append(contenedorCreado)
-// })
+let tipo = "sfw"
+let categoriaDefault = "dance"
+const categorias = [
+    "waifu",
+    "neko",
+    "shinobu",
+    "megumin",
+    "bully",
+    "cuddle",
+    "cry",
+    "kiss",
+    "lick",
+    "hug",
+    "awoo",
+    "pat",
+    "smug",
+    "bonk",
+    "yeet",
+    "blush",
+    "smile",
+    "wave",
+    "highfive",
+    "handhold",
+    "nom",
+    "bite",
+    "glomp",
+    "slap",
+    "kill",
+    "kick",
+    "happy",
+    "wink",
+    "poke",
+    "dance",
+    "cringe"
+]
+
+const selector = document.getElementById('selector');
+const containerIMG = document.getElementById('img');
+const btnGenerador = document.getElementById('generador');
+const enunciado = document.getElementById('');
+
+
+
+//sombra de carga
+const sombraDeCarga = `
+    <div class ="containerSombra">
+        <span class="sombra"></span>
+    </div>
+`;
+
+const boton = document.getElementById("generador");
+boton.addEventListener('click', ()=>{
+    console.log("estoy generando");
+    img.innerHTML="";
+    img.innerHTML=sombraDeCarga;
+    generar();
+})
+
+
+function generar(){
+    fetch(`https://api.waifu.pics/sfw/waifu`).then((response)=>response.json()).then((datos)=>{
+    console.log(datos.url);
+    img.innerHTML=`
+        <img src ="${datos.url}">
+    `;
+    
+    }).catch(error=> {
+        img.innerHTML=sombraDeCarga;
+        // img.innerHTML = `Error!`
+    })
+
+}
 
 
 
