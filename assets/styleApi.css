@@ -158,6 +158,8 @@ body{
 
     
     .containerBtnH3{
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -165,7 +167,7 @@ body{
         padding: 1rem;
 
         
-        .presentacion{
+        .subTitulo{
             color: #fff;
             margin-bottom: 1.2rem;
         }
@@ -184,9 +186,34 @@ body{
             &:hover{
                 transform: scale(0.95);
                 box-shadow: 0 0 10px #9f3648cd;
+                background: #873241;
                 transition: 0.3s;
             }
 
+        }
+
+        .containerSeletor{
+            #selectorCategoria{
+                width: 20rem;
+                padding: 1rem 1rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                font-size: 1rem;
+                font-weight: bold;
+                text-align: center;
+                color: #ffffff;
+                border-radius: 5px;
+                border: 1px solid #ffffff;
+                background: #9f3647;
+                text-transform: capitalize;
+                
+                option{
+                    color: rgb(255, 255, 255);
+                    text-transform: uppercase;
+
+                }
+                
+            }
         }
     }
 }

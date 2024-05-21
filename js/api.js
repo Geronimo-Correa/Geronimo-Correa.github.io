@@ -1,35 +1,7 @@
-// gifAPI('cry',2)
-// gifAPI('shoot',5)
-// gifAPI('bored',5)
-// gifAPI('kick',6)
-
-
-// function gifAPI(nombre,cant) {
-//     let containerIMG = document.getElementById('container');
-
-//     //obtención de gifs
-//     fetch("https://nekos.best/api/v2/"+nombre+"?amount="+cant)
-//     .then((response)=>response.json())
-//     .then((datos)=>{
-//             datos.results.forEach((element) => {
-//                 const contenedorCreado = document.createElement('div');
-//                 contenedorCreado.innerHTML = `
-//                     <h4 class="animeName">Anime: ${element.anime_name}</h4>
-//                     <img src="${element.url}">
-//                 `;
-//                 containerIMG.append(contenedorCreado);
-        
-//             });
-        
-//     });
-// }
-
-
-// idea a futuro: crear un generador de imagenes o gifs en base a la selección del usuario
 let tipo = "sfw"
-let categoriaDefault = "dance"
 const categorias = [
-    "waifu",
+    "highfive",
+    "dance",
     "neko",
     "shinobu",
     "megumin",
@@ -47,7 +19,6 @@ const categorias = [
     "blush",
     "smile",
     "wave",
-    "highfive",
     "handhold",
     "nom",
     "bite",
@@ -58,59 +29,58 @@ const categorias = [
     "happy",
     "wink",
     "poke",
-    "dance",
+    "waifu",
     "cringe"
 ]
 
-const selector = document.getElementById('selector');
+const selector = document.getElementById('selectorCategoria');
 const containerIMG = document.getElementById('img');
 const btnGenerador = document.getElementById('generador');
 const enunciado = document.getElementById('');
 
 
-categorias.forEach((element) =>{
-    
-})
+// cargando array a las opciones del Select
+    var opt = '';
+    opt= `<option value="kill" disable> Seleccione categoria </option>`
 
+    categorias.forEach((categoria)=>{
+        opt += `
+            <option value = "${categoria}"> ${categoria} </option>
+        `;
+        
+    });
+    selector.innerHTML = opt;
+//cierre carga de array 
 
-selector.innerHTML = `
-
-    <select>
-        <option value=""></option> 
-    </select>
-
-`;
-
-
-
-
-
-generar()
+generar();
 
 //sombra de carga
 const sombraDeCarga = `
     <div class ="containerSombra"></div>
 `;
+//cierre sombra de carga
+
 
 const boton = document.getElementById("generador");
 boton.addEventListener('click', ()=>{
-    containerIMG.innerHTML='';
     containerIMG.innerHTML=sombraDeCarga;
     generar();
 })
 
 
-function generar(){
-    fetch(`https://api.waifu.pics/sfw/kill`).then((response)=>response.json()).then((datos)=>{
-    console.log(datos.url);
-    containerIMG.innerHTML=`
-        <img src ="${datos.url}">
-    `;
+function generar(){ //funcion conexión a la api de img o gif
+    
+    let cate = selector.value;
+    fetch(`https://api.waifu.pics/${tipo}/${cate}`).then((response)=>response.json()).then((datos)=>{
+
+        containerIMG.innerHTML='';
+        containerIMG.innerHTML=`
+            <img src ="${datos.url}">
+        `;
     
     }).catch(error=> {
-        containerIMG.innerHTML = `Hubo un error Error!`
+        boton.innerHTML = `error`;
     })
-
 }
 
 
