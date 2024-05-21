@@ -67,6 +67,24 @@ const containerIMG = document.getElementById('img');
 const btnGenerador = document.getElementById('generador');
 const enunciado = document.getElementById('');
 
+
+categorias.forEach((element) =>{
+    
+})
+
+
+selector.innerHTML = `
+
+    <select>
+        <option value=""></option> 
+    </select>
+
+`;
+
+
+
+
+
 generar()
 
 //sombra de carga
@@ -76,8 +94,8 @@ const sombraDeCarga = `
 
 const boton = document.getElementById("generador");
 boton.addEventListener('click', ()=>{
-    img.innerHTML='';
-    img.innerHTML=sombraDeCarga;
+    containerIMG.innerHTML='';
+    containerIMG.innerHTML=sombraDeCarga;
     generar();
 })
 
@@ -85,12 +103,12 @@ boton.addEventListener('click', ()=>{
 function generar(){
     fetch(`https://api.waifu.pics/sfw/kill`).then((response)=>response.json()).then((datos)=>{
     console.log(datos.url);
-    img.innerHTML=`
+    containerIMG.innerHTML=`
         <img src ="${datos.url}">
     `;
     
     }).catch(error=> {
-        img.innerHTML = `Hubo un error Error!`
+        containerIMG.innerHTML = `Hubo un error Error!`
     })
 
 }
