@@ -1,15 +1,23 @@
 const form = document.querySelector('form');
 
+
+
+
 form.addEventListener('submit',(event) => {
 
 
     if (!validarForm()){
-        alert("Complete los campos");
+        Swal.fire({
+            title: 'Error!',
+            text: 'Completar los campos',
+            icon: 'error',
+            confirmButtonText: 'Cerrar',
+            color:'white',
+          })
         event.preventDefault();
 
     }else{
-        alert("El formulario ha sido enviado con éxito");
-    
+        
     }
 });
 

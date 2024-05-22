@@ -36,6 +36,7 @@ const categorias = [
 const selector = document.getElementById('selectorCategoria');
 const containerIMG = document.getElementById('img');
 const btnGenerador = document.getElementById('generador');
+const descarga = document.getElementById('descarga');
 const enunciado = document.getElementById('');
 
 
@@ -73,10 +74,13 @@ function generar(){ //funcion conexión a la api de img o gif
     let cate = selector.value;
     fetch(`https://api.waifu.pics/${tipo}/${cate}`).then((response)=>response.json()).then((datos)=>{
 
-        containerIMG.innerHTML='';
         containerIMG.innerHTML=`
             <img src ="${datos.url}">
         `;
+        descarga.innerHTML=`
+            <a href="${datos.url}" target="_blank" download ="cac-series">Descargar</a>
+        `;
+            
     
     }).catch(error=> {
         boton.innerHTML = `error`;
