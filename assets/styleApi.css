@@ -309,7 +309,7 @@ body{
             margin-top: 2rem;
             margin-bottom: 2rem;
         .containerBtnH3{
-                  margin: 0 auto;  
+            margin: 0; 
             .subTitulo{
                 font-size: 1.2rem;
                 color: #fff;
@@ -318,7 +318,8 @@ body{
 
             .btn{
                 width: 14rem;
-                padding: 1rem;
+                padding: 0.5rem;
+                margin: 0rem 1rem;
                 font-weight: bold;
                 font-size: 1rem;
             }
@@ -328,6 +329,7 @@ body{
                     width: 14rem;
                     padding: 1rem;
                     font-size: 0.9rem;
+                    margin: 1rem 1rem;
                     
                 }
             }
