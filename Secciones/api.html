@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/styleApi.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -40,19 +40,19 @@
 
 
 
+    
 
-
-    <div id="container" class="containerImg">
+    <div id="container" class="containerImg" >
         <!-- crear un generador de imagens y gifs elegido x el usuari -->
         
-        <div class="containerIMGyDowload">
-            <div id="img">
+        <div class="containerIMGyDowload" data-aos="zoom-in">
+            <div id="img" >
             </div>
             <div id="descarga"></div>
         </div>
 
 
-        <div class="containerBtnH3">
+        <div class="containerBtnH3" data-aos="zoom-in">
             <h2 class="subTitulo">Elija categoria y genere su IMAGEN o GIF:</h2>
             <div class="containerSeletor">
                 <select id="selectorCategoria"></select>
@@ -85,6 +85,11 @@
            </ul>
         </nav>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="../js/api.js"></script>
 </body>
