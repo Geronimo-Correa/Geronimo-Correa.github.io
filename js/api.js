@@ -42,7 +42,7 @@ const enunciado = document.getElementById('');
 
 // cargando array a las opciones del Select
     var opt = '';
-    opt= `<option value="kill" disable> Seleccione categoria </option>`
+    opt= `<option value="kill" disable>Seleccione categoria </option>`
 
     categorias.forEach((categoria)=>{
         opt += `
@@ -78,7 +78,7 @@ function generar(){ //funcion conexión a la api de img o gif
             <img src ="${datos.url}">
         `;
         descarga.innerHTML=`
-            <a href="${datos.url}" target="_blank" download ="cac-series">Descargar</a>
+            <a href="${datos.url}" target="_blank" download ="cac-series">⬇️ Descargar ⬇️</a>
         `;
             
     
