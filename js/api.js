@@ -2,7 +2,6 @@ let tipo = "sfw"
 const categorias = [
     "highfive",
     "dance",
-    "neko",
     "shinobu",
     "megumin",
     "bully",
@@ -29,7 +28,6 @@ const categorias = [
     "happy",
     "wink",
     "poke",
-    "waifu",
     "cringe"
 ]
 
